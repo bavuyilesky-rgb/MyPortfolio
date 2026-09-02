@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Hlokoma Mtshelwane</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">Hlokoma.dev</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="family.html">Family</a></li>
+          <li><a href="hobbies.html">Hobbies</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="contact.html" class="active">Contact</a></li>
+          <li><button class="theme-toggle-btn" onclick="toggleTheme()">🌓 Theme</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-wrapper">
+    <div class="card" style="max-width: 650px; margin: 0 auto;">
+      <h2>Get In Touch</h2>
+      <p style="color: var(--text-muted); margin-bottom: 1.5rem;">Feel free to reach out for software collaborations, data projects, or professional inquiries.</p>
+
+      <div style="margin-bottom: 1.5rem; padding: 1rem; background: var(--bg-surface); border-radius: 8px;">
+        <p><strong>Email:</strong> <a href="mailto:hlokomamtshelwane903@gmail.com" style="color: var(--accent);">hlokomamtshelwane903@gmail.com</a></p>
+        <p><strong>Phone:</strong> 082 232 0791</p>
+        <p><strong>Location:</strong> Mthatha, Eastern Cape</p>
+      </div>
+
+      <form id="contact-form" onsubmit="handleContactSubmit(event)">
+        <div class="form-group">
+          <label for="contact-name">Your Full Name</label>
+          <input type="text" id="contact-name" placeholder="e.g. John Doe">
+        </div>
+
+        <div class="form-group">
+          <label for="contact-email">Your Email Address</label>
+          <input type="email" id="contact-email" placeholder="e.g. johndoe@example.com">
+        </div>
+
+        <div class="form-group">
+          <label for="contact-msg">Your Message</label>
+          <textarea id="contact-msg" rows="5" placeholder="Write your message here..."></textarea>
+        </div>
+
+        <p id="form-feedback" style="margin-bottom: 1rem; font-weight: 500;"></p>
+
+        <button type="submit" class="btn" style="width: 100%;">Send Message</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Hlokoma Mtshelwane. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

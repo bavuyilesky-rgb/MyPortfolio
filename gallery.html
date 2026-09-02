@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery | Hlokoma Mtshelwane</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="nav-container">
+      <a href="index.html" class="logo">Hlokoma.dev</a>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Me</a></li>
+          <li><a href="family.html">Family</a></li>
+          <li><a href="hobbies.html">Hobbies</a></li>
+          <li><a href="gallery.html" class="active">Gallery</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><button class="theme-toggle-btn" onclick="toggleTheme()">🌓 Theme</button></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main-wrapper">
+    <div class="card">
+      <h2>Photo Gallery & Achievements</h2>
+      <p style="text-align: center; color: var(--text-muted);">Browse through key academic ceremonies, innovation awards, and personal milestones.</p>
+
+      <div class="slideshow-container">
+        <img class="slide active" src="src/SIC.jpg" alt="Samsung Innovation Campus 2nd Place Award">
+        <img class="slide" src="src/1000121530.jpg" alt="Graduation Stage Ceremony">
+        <img class="slide" src="src/9a3d5085-e192-47e9-96cd-13b16c5ffbf7-1_all_4147.jpg" alt="Graduation with Family">
+      </div>
+
+      <div class="slideshow-controls">
+        <button class="btn" onclick="changeSlide(-1)">&larr; Previous</button>
+        <button class="btn" onclick="changeSlide(1)">Next &rarr;</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Hlokoma Mtshelwane. All Rights Reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
